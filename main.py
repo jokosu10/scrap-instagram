@@ -6,7 +6,7 @@ url = 'https://www.instagram.com/graphql/query/'
 short_code = input('Please enter a short code post instagram : ')
 
 var = {
-        #"shortcode": "CDQzdUGlP2e",
+        #"shortcode": "CC0rB2rDKkX",
         "shortcode": short_code,
         "include_reel": True,
         "first": 50
@@ -30,5 +30,3 @@ for user in users:
     print(username, fullname, profile_pic)
     count += 1
     print(count)
-
-
