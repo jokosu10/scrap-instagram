@@ -35,8 +35,8 @@ while 1:
     try:
         users = response['data']['shortcode_media']['edge_liked_by']['edges']
     except:
-        print('Waiting for 60 seconds...')
-        time.sleep(60)
+        print('Waiting for 30 seconds...')
+        time.sleep(30)
         continue
 
     for user in users:
@@ -45,7 +45,6 @@ while 1:
             writer = csv.writer(open('result_like/{} {}.csv'.format(short_code, counter_file), 'w', newline=''))
             headers = ['No', 'User Name', 'Full Name', 'Profile Picture']
             writer.writerow(headers)
-
 
         username = user['node']['username']
         fullname = user['node']['full_name']
@@ -62,4 +61,4 @@ while 1:
     if has_next_page == False:
         break
 
-    time.sleep(10)
+    time.sleep(3)
