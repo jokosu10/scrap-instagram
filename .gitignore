@@ -1,5 +1,7 @@
 result_like/*.csv
 result_comment/*.csv
+result_media_download/*.jpg
+result_media_download/*.mp4
 .idea
 # Byte-compiled / optimized / DLL files
 __pycache__/
